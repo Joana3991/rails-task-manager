@@ -16,7 +16,7 @@
     <% end %>
 
     <hr>
-    <%= link_to "Delete this task", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
-    <%= link_to "Back to all tasks", tasks_path%>
+    <%= link_to "Delete this task", task_path(@task), data: {turbo_method: :delete, turbo_confirm: "Are you sure? Once a task is deleted you can not recover it."} %>
+    <%= link_to "Back to all tasks", tasks_path, class:'ms-2'%>
   </div>
 </div>
